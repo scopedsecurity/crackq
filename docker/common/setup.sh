@@ -31,7 +31,7 @@ python3 -m pip install gunicorn
 #Download and compile pyhashcat & Hashcat
 #git clone https://github.com/f0cker/pyhashcat.git
 #git clone https://github.com/f0cker/pyhashcat.git --branch hashcat6.0
-git clone https://github.com/f0cker/pyhashcat.git --branch dev_temp
+git clone https://github.com/scopedsecurity/pyhashcat.git
 cd ./pyhashcat/pyhashcat
 
 #move to static version when hashcat v6 is released
