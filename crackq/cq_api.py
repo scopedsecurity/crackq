@@ -99,7 +99,7 @@ class parse_json_schema(Schema):
             "name": "Invalid input characters",
             "username": "Invalid input characters",
             }
-    job_id = fields.UUID(allow_none=False)# validate=Length(min=1, max=32))
+    job_id = fields.UUID(allow_none=True)# validate=Length(min=1, max=32))
     batch_job = fields.List(fields.Dict(fields.UUID(), fields.Int(min=0, max=1000)))
     place = fields.Int(validate=Range(min=1, max=100))
     hash_list = fields.List(fields.String(validate=StringContains(r'[^A-Za-z0-9\*\$\@\/\\\.\:\-\_\+\.]+\~')),
